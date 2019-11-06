@@ -3,7 +3,7 @@ const app = express()
 
 //rota principal
 app.get("/", function(req, res){
-    res.send("Welcome to my aplication server")
+    res.sendFile(__dirname + "/html/index.html")
 })
 
 //nova rota
