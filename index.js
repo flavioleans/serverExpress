@@ -8,12 +8,12 @@ app.get("/", function(req, res){
 
 //nova rota
 app.get("/about", function(req, res){
-    res.send("Page About Us")
+    res.send("Page About Us...")
 })
 
 //nova rota
 app.get("/blog", function(req, res){
-    res.send("Welcome to my Blog")
+    res.send("Welcome to my Blog!")
 })
 
 //rota hello com parametro
