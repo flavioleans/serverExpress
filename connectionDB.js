@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('testeBanco', 'root', 'admin', {
+const sequelize = new Sequelize('testeBanco', 'root', 'fl4v10ls', {
     host: "localhost",
     dialect: 'mysql'
 })
@@ -19,6 +19,7 @@ const Post = sequelize.define('posts',{
     }
 })
 
+
 const Users = sequelize.define('users',{
     name:{
         type: Sequelize.STRING
@@ -34,10 +35,14 @@ const Users = sequelize.define('users',{
     }
 })
 
+// Post.sync({force: true}) Criando a tabela Post
+
+// Users.sync({force: true}) Criando a tabela Users
+
 //CRIANDO USUÁRIO
 Users.create({
-    name:"Flavio ",
-    lastName: "Leandro da Silva",
+    name:"Flávio",
+    lastName: "Silva",
     age: 31,
     email: "leans.flavio@gmail.com"
 })
